@@ -1,4 +1,4 @@
-variable "control _account" {
+variable "control_account" {
     type = string
 }
 variable "producer_role_arn_mesh" {
