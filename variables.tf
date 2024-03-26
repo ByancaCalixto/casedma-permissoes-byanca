@@ -16,6 +16,12 @@ variable "database_spec" {
 variable "sor_s3_bucket" {
     type = string
 }
+variable "sot_s3_bucket" {
+    type = string
+}
 variable "tabela_sor" {
+    type = string
+}
+variable "tabela_sot" {
     type = string
 }
