@@ -361,7 +361,7 @@ resource "aws_lakeformation_permissions" "table_permissions_spec_producer" {
 
 ### acesso a tabela spec
 
-resource "aws_lakeformation_permission" "table_permissions_spec_consumer" {
+resource "aws_lakeformation_permissions" "table_permissions_spec_consumer" {
   depends_on =["aws_glue_catalog_table.tabela_spec"]
   principal = var.consumer_role_arn_mesh
   permissions = ["SELECT"]
