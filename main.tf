@@ -265,11 +265,6 @@ resource "aws_glue_catalog_table" "tabela_sot" {
         name           = "dt_carga"
         type           = "timestamp"
     }
-
-    columns {
-        name           = "anomes"
-        type           = "int"
-    }
   }
 }
 
@@ -348,11 +343,6 @@ resource "aws_glue_catalog_table" "tabela_spec" {
     columns {
         name           = "dt_carga"
         type           = "timestamp"
-    }
-
-    columns {
-        name           = "ano_mes_transacoes"
-        type           = "int"
     }
   }
 }
