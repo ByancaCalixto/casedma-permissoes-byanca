@@ -363,7 +363,7 @@ resource "aws_lakeformation_permissions" "table_permissions_spec_producer" {
 
 resource "aws_lakeformation_permissions" "table_permissions_spec_producer" {
   depends_on =["aws_glue_catalog_table.tabela_spec"]
-  principal = var.my_user
+  principal = var.consumer_role_arn_mesh
   permissions = ["SELECT"]
   table {
     database_name = var.database_spec
