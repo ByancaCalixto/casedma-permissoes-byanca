@@ -358,3 +358,15 @@ resource "aws_lakeformation_permissions" "table_permissions_spec_producer" {
 }
 
 ### finalizado tabela spec
+
+### acesso a tabela spec
+
+resource "aws_lakeformation_permissions" "table_permissions_spec_producer" {
+  depends_on =["aws_glue_catalog_table.tabela_spec"]
+  principal = var.my_user
+  permissions = ["SELECT"]
+  table {
+    database_name = var.database_spec
+    name = var.tabela_spec
+  }
+}

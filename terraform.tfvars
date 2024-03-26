@@ -9,3 +9,4 @@ tabela_spec = "produto_credito_spec_byanca"
 sor_s3_bucket = "s3://corp-sor-sa-east-1-850202893763"
 sot_s3_bucket = "s3://corp-sot-sa-east-1-850202893763"
 spec_s3_bucket = "s3://corp-spec-sa-east-1-850202893763"
+my_user = byanca_calixto
